@@ -34,10 +34,7 @@ public class LoginManagerScript : MonoBehaviour
             // save account
             PlayerPrefs.SetString("Account", account);
             PlayerPrefs.SetString("TypeAccount", "Metamask");
-            if (rememberMe.isOn)
-                PlayerPrefs.SetInt("RememberMe", 1);
-            else
-                PlayerPrefs.SetInt("RememberMe", 0);
+ 
             print("Account: " + account);
             // load next scene
             SceneManager.LoadScene("GameMenuScene");
